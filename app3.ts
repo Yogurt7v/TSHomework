@@ -15,9 +15,9 @@ const getData = async (url : string) : Promise<SingleComment[]> => {
 };
 
 getData(COMMENTS_URL).then((data) => {
-  let results : { id: number, email: string }[] = [];
+  let results : { ID: number, Email: string }[] = [];
   data.map((item) => {
-    results.push({ id: item.id, email: item.email });
+    results.push({ ID: item.id, Email: item.email });
   });
   console.log(results);
 });
