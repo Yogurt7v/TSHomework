@@ -17,7 +17,7 @@ const getData = (url) => __awaiter(void 0, void 0, void 0, function* () {
 getData(COMMENTS_URL).then((data) => {
     let results = [];
     data.map((item) => {
-        results.push({ id: item.id, email: item.email });
+        results.push({ ID: item.id, Email: item.email });
     });
     console.log(results);
 });
